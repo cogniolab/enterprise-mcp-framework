@@ -372,9 +372,7 @@ services:
 
 ## 🤝 Enterprise Support
 
-- 📧 **Email**: enterprise@cogniolab.com
-- 💬 **Slack**: [Join our community](https://cogniolab.slack.com)
-- 📞 **Phone**: +1 (555) 123-4567
+- 📧 **Email**: dev@cogniolab.com
 - 📝 **Consulting**: Custom integrations and training
 
 ---

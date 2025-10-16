@@ -370,10 +370,25 @@ services:
 
 ---
 
+## 💬 Community
+
+Join our community to ask questions, share ideas, and connect with other developers building enterprise MCP systems!
+
+- **[GitHub Discussions](https://github.com/cogniolab/enterprise-mcp-framework/discussions)** - Ask questions, share your work, and discuss best practices
+- **[GitHub Issues](https://github.com/cogniolab/enterprise-mcp-framework/issues)** - Bug reports and feature requests
+- **Email**: dev@cogniolab.com
+
+We're building a supportive community where developers help each other make MCP production-ready for enterprises. Whether you're just getting started or scaling to production, your questions and contributions are welcome!
+
+---
+
 ## 🤝 Enterprise Support
 
-- 📧 **Email**: dev@cogniolab.com
+For production deployments and enterprise requirements:
+
+- 📧 **Email**: enterprise@cogniolab.com
 - 📝 **Consulting**: Custom integrations and training
+- 💼 **SLA**: Priority support with guaranteed response times
 
 ---
 

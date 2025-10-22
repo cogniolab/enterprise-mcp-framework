@@ -297,6 +297,54 @@ Pre-built dashboards included:
 - **Cost**: Token usage, cost per user, budget alerts
 - **Governance**: Approval workflows, audit trail, policy violations
 
+### OpenTelemetry Integration
+
+Export telemetry to enterprise observability platforms:
+
+**Jaeger (Open Source)**:
+```python
+from agent_monitor.exporters import OpenTelemetryExporter, create_jaeger_config
+
+config = create_jaeger_config(service_name="mcp-server")
+exporter = OpenTelemetryExporter(config)
+exporter.start()
+```
+
+**Datadog (Commercial)**:
+```python
+from agent_monitor.exporters import create_datadog_config
+
+config = create_datadog_config(
+    service_name="mcp-server",
+    api_key=os.getenv("DD_API_KEY")
+)
+exporter = OpenTelemetryExporter(config)
+exporter.start()
+```
+
+**New Relic (Commercial)**:
+```python
+from agent_monitor.exporters import create_newrelic_config
+
+config = create_newrelic_config(
+    service_name="mcp-server",
+    api_key=os.getenv("NEW_RELIC_API_KEY")
+)
+exporter = OpenTelemetryExporter(config)
+exporter.start()
+```
+
+**Supported Platforms**:
+- ✅ Jaeger (open-source distributed tracing)
+- ✅ Datadog (full-stack APM)
+- ✅ New Relic (full-stack observability)
+- ✅ Grafana Cloud
+- ✅ Prometheus
+- ✅ AWS X-Ray
+- ✅ Google Cloud Trace
+
+[View Integration Examples →](examples/opentelemetry-integration/README.md)
+
 ---
 
 ## 🚢 Deployment
@@ -406,11 +454,13 @@ For production deployments and enterprise requirements:
 ## 🌟 Examples
 
 Explore [examples/](examples/) for:
-- **Basic**: Simple proxy setup
-- **PostgreSQL**: Secure database access
-- **AWS**: Cloud operations with approvals
-- **Slack**: Business app integration
-- **Multi-Tenant**: SaaS deployment
+- **GitHub MCP**: Repository management with RBAC and approvals
+- **Jira MCP**: Ticket management with SOX compliance
+- **Notion MCP**: Knowledge management with GDPR compliance
+- **OpenTelemetry Integration**: Export to Jaeger, Datadog, New Relic
+- **Multi-Tenant**: SaaS deployment patterns
+
+[View All Examples →](examples/README.md)
 
 ---
 
